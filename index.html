@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String Manipulation</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Magic Word</h1>
+        <div class="intro">
+            In the "Magic Word" game, you type a single letter into a text field and use six buttons to add or delete the letter at the start, middle, or end of your word. The current word is displayed on the screen, and a message appears if you try to delete a non-existent letter. You can continue until your word reaches 18 letters.
+        </div>
+        <div class="intro">
+            <div style="margin: 10px 0px 10px 0px;">Your Word:
+                <span id="output"></span>
+            </div>
+            <div style="margin: 10px 0px 10px 0px;">Errors:
+                <span id="message"></span>
+            </div>
+            <div style="margin: 10px 0px 10px 0px;">Letter Count:
+                <span id="count"></span>
+            </div>
+        </div>
+        <div class="intro">
+            <input type="text" id="tinput" maxlength="1">
+        </div>
+
+        <div class="button-container">
+            <button id="addStart">Add to Start</button>
+            <button id="addMiddle">Add to Middle</button>
+            <button id="addEnd">Add to End</button>
+            <button id="delStart">Delete from Start</button>
+            <button id="delMiddle">Delete from Middle</button>
+            <button id="delEnd">Delete from End</button>
+        </div>
+        <div class="button-container">
+            <button id="search">Search</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
